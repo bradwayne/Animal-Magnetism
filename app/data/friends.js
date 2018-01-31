@@ -3,14 +3,14 @@ var friendsArr = [
         name: "Sam",
         photo: "https://www.what-dog.net/Images/faces2/scroll001.jpg",
         scores: [
-            "5",
-            "1",
-            "4",
-            "4",
-            "5",
+            "3",
             "1",
             "2",
-            "5",
+            "4",
+            "3",
+            "1",
+            "2",
+            "3",
             "4",
             "1"
         ]
