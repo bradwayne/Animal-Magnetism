@@ -1,98 +1,98 @@
 var friendsArr = [
     {
-        name: "Ahmed",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        name: "Sam",
+        photo: "https://www.what-dog.net/Images/faces2/scroll001.jpg",
         scores: [
             "5",
             "1",
             "4",
             "4",
-            "5"
-            // "1",
-            // "2",
-            // "5",
-            // "4",
-            // "1"
+            "5",
+            "1",
+            "2",
+            "5",
+            "4",
+            "1"
         ]
     },
     {
-        name: "Jacob Deming",
-        photo: "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+        name: "Ryan",
+        photo: "https://i.amz.mshcdn.com/2xXpy52DS30uKJBrQm-qI1JDAbc=/fit-in/1200x9600/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F454852%2Fc149fd02-3174-46f9-9b58-d7026cc5ada9.jpg",
         scores: [
             "4",
             "2",
             "5",
             "1",
+            "3",
+            "2",
+            "2",
+            "1",
+            "3",
+            "2"
+        ]
+    },
+    {
+        name: "Laura",
+        photo: "https://www.gannett-cdn.com/-mm-/42a4317dac153f31d895a8175f390cb4076cda69/c=253-71-1987-1375&r=x404&c=534x401/local/-/media/2017/05/02/USATODAY/USATODAY/636293373145198404-050217pitbull.jpg",
+        scores: [
+            "5",
+            "5",
+            "5",
+            "5",
+            "4",
+            "1",
+            "3",
+            "2",
+            "5",
+            "5"
+        ]
+    },
+    {
+        name: "Bob",
+        photo: "https://www.petmd.com/sites/default/files/hypoallergenic-cat-breeds.jpg",
+        scores: [
+            "3",
+            "3",
+            "4",
+            "2",
+            "2",
+            "1",
+            "3",
+            "2",
+            "2",
             "3"
-            // "2",
-            // "2",
-            // "1",
-            // "3",
-            // "2"
         ]
     },
     {
-        name: "Jeremiah Scanlon",
-        photo: "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
-        scores: [
-            "5",
-            "5",
-            "5",
-            "5",
-            "4"
-            // "1",
-            // "3",
-            // "2",
-            // "5",
-            // "5"
-        ]
-    },
-    {
-        name: "Louis T. Delia",
-        photo: "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
-        scores: [
-            "3",
-            "3",
-            "4",
-            "2",
-            "2"
-            // "1",
-            // "3",
-            // "2",
-            // "2",
-            // "3"
-        ]
-    },
-    {
-        name: "Lou Ritter",
-        photo: "https://m.facebook.com/photo.php?fbid=10208500699025296&id=1542229019&set=a.1549418665704.77596.1542229019&source=11",
+        name: "Nancy",
+        photo: "https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2017/04/cat2.jpg",
         scores: [
             "4",
             "3",
             "4",
             "1",
-            "5"
-            // "2",
-            // "5",
-            // "3",
-            // "1",
-            // "4"
+            "5",
+            "2",
+            "5",
+            "3",
+            "1",
+            "4"
         ]
     },
     {
-        name: "Jordan Biason",
-        photo: "https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/12741971_10205764267089153_4212986785721953092_n.jpg?oh=4e18265f7d380167223a97fbd7eba278&oe=57B78445",
+        name: "Jessica",
+        photo: "https://assets3.thrillist.com/v1/image/2351388/size/tmg-facebook_social.jpg",
         scores: [
             "4",
             "4",
             "2",
             "3",
-            "2"
-            // "2",
-            // "3",
-            // "2",
-            // "4",
-            // "5"
+            "2",
+            "2",
+            "3",
+            "2",
+            "4",
+            "5"
         ]
     },
 ];
