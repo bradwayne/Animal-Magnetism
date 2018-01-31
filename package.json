@@ -1,24 +1,26 @@
 {
   "name": "friendfinder",
   "version": "1.0.0",
-  "description": "node and express dating app",
+  "description": "",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chosen-js": "^1.8.3",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bradwayne/FriendFinder.git"
   },
-  "author": "Bradley Schmaeman",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bradwayne/FriendFinder/issues"
   },
-  "homepage": "https://github.com/bradwayne/FriendFinder#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/bradwayne/FriendFinder#readme"
 }

@@ -1,28 +1,78 @@
-// var friends
+var friends = require("../data/friends");
 
-// app.get("/api/friends/:friends?", function (req, res) {
-//     var chosen = req.params.friends;
-//     if (chosen) {
-//         console.log(chosen);
-//         for (var i = 0; i < friends.length; i++) {
+module.exports = function (app) {
 
-//             if (chosen === friends[i].name) {
 
-//                 return res.json(friends[i]);
-//             }
-//         }
-//         return res.json(false);
-//     }
-//     return res.json(friends);
-// });
+    app.get("/api/friends", function (req, res) {
+        res.json(friends);
+    });
 
-// app.post("/api/addFriends?", function (req, res) {
+    app.post("/api/friends", function (req, res) {
+        friends.push(req.body);
+        //res.json(friends);
 
-//     var newFriends = req.body;
-//     console.log(newFriends);
 
-//     friends.push(newFriends);
+        var bestMatch = {
+            name: "",
+            photo: "",
+            friendDifference: 100
+        };
 
-//     res.json(newFriends);
+        var newFriend = req.body;
+        //var userScores = newFriend.scores;
+        var userScores = newFriend["scores[]"];
+        var totalDifference = 0;
 
-// });
+        //var scores = newFriend["scores[]"];
+        // req.body.newFriend = scores;
+        req.body.scores = userScores;
+
+        delete newFriend["scores[]"];
+
+
+        console.log("array of friends:");
+        console.log(friends);
+        console.log("newFriend:");
+        console.log(newFriend);
+        console.log("show me user scores: ");
+        console.log(userScores);
+
+
+        //Loop through friends object and compare
+        for (var i = 0; i < friends.length; i++) {
+
+            totalDifference = 0;
+            if(newFriend.name !== friends[i].name){
+                //console.log("looping through friends array of " + i )
+                //Loop through the scores of each friend
+                for (var j = 0; j < friends[i].scores.length; j++) {
+                    //console.log("second loop: survey questions:" + j + ", scores : " + friends[i].scores[j])
+                    //calculating the difference between each score and sum them into totalDifference
+                    totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+                }
+                console.log("total difference: " + totalDifference + ", and current best match is : " + bestMatch.friendDifference)
+                //Find best friend match
+                if (totalDifference <= bestMatch.friendDifference) {  //25 <= 100
+                    console.log("if total difference is smaller than current best match, we should see this pop up!");
+                    bestMatch.name = friends[i].name;
+                    bestMatch.photo = friends[i].photo;
+                    bestMatch.friendDifference = totalDifference;
+
+
+                } else {
+                    console.log("previous friend is the better match!");
+                }
+            }
+           
+        }
+        console.log("best match : " );
+        console.log(bestMatch);
+        res.json(bestMatch);
+        //Pushing new friend to friends API
+        //    friends.push(req.body);
+        //     res.json(bestMatch);
+
+
+    });
+
+};
