@@ -4,14 +4,14 @@ var friendsArr = [
         photo: "https://www.what-dog.net/Images/faces2/scroll001.jpg",
         scores: [
             "3",
-            "1",
-            "2",
             "4",
+            "2",
+            "1",
             "3",
             "1",
             "2",
             "3",
-            "5",
+            "2",
             "5"
         ]
     },
@@ -90,9 +90,9 @@ var friendsArr = [
             "2",
             "2",
             "3",
-            "2",
             "4",
-            "5"
+            "5",
+            "2"
         ]
     },
 ];
