@@ -19,14 +19,10 @@ module.exports = function (app) {
         };
 
         var newFriend = req.body;
-        //var userScores = newFriend.scores;
-        var userScores = newFriend["scores[]"];
         var totalDifference = 0;
 
-        //var scores = newFriend["scores[]"];
-        // req.body.newFriend = scores;
+        var userScores = newFriend["scores[]"];
         req.body.scores = userScores;
-
         delete newFriend["scores[]"];
 
 
