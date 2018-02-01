@@ -2,11 +2,11 @@
 
 Animal Magnetism is an app that will find a compatible animal loving friend.
 
-## Home Screen
+**Home Screen**
 
     * Go To Survey - click this button to inter the survey part of the app.
 
-## Start Your Survey
+**Start Your Survey**
 
     **About You - field input**
 
@@ -24,7 +24,7 @@ Animal Magnetism is an app that will find a compatible animal loving friend.
             * 4
             * 5 (strongly agree)
 
-## Submit When Done
+**Submit When Done**
         
         * click this button to send your personal information and allow your survey data to be compared to the other people in the database. It will then provide you with the name and pet photo of the person that you are most compatible with.
 
